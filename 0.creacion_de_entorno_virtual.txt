@@ -1,0 +1,44 @@
+Creación de un entorno virtual con python:
+
+1) Abro el CMD en la carpeta /aprendizaje_python creada en mi escritorio:
+C:\Users\User\Desktop\aprendizaje_python>
+
+2) Corro comando python para crear un entorno virtual dentro:
+python -m venv mi_entorno_1
+
+3) Como se ve, un entorno virtual creado con este comnando, por defecto, se compone de la siguiente estructura:
+/Include
+/Lib 
+/Scripts 
+pyvenv.cfg
+
+4) Ingreso al entorno virtual:
+cd mi_entorno_1
+
+5) Entro a /Scripts
+cd Scripts
+
+6) Activo el entorno virtual:
+activate 
+* voy a visualizar lo siguiente:
+(mi_entorno_1) C:\Users\User\Desktop\aprendizaje_python\mi_entorno_1\Scripts>
+
+7) Vuelvo a la raiz del entorno virtual para crear la carpeta que ocntendrá mi aplicacion:
+cd ..
+
+8) Creo la carpeta que contendrá mi aplicacion (/app):
+mkdir app
+
+9) Entro:
+cd app 
+
+10) Abro mi aplicacion con vsc:
+code .
+
+11) Desde el cmd (podria ser tb desde la terminal de vsc) instalo la libreria pymysql que me sirve para conectarme a bases de datos mysql:
+pip install pymysql 
+* la librería se instala y por ende solo esta disponible dentro del entorno virtual donde estoy parado (mi_entorno_1),y asu vez tengo activado (paso 6)
+* dentro de mi entorno virtual, "fisicamente" se instala en /Lib/site-packages (aca podemos encontrar la libreria /pymysql, descargada en este punto 11)
+
+12) documentacion de la libreria:
+https://pymysql.readthedocs.io/en/latest/user/examples.html
